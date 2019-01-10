@@ -1,3 +1,6 @@
+// import models
+require('./models/User');
+
 require('./services/passport');
 const express = require('express');
 const app = express();
