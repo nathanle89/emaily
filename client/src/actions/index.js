@@ -10,7 +10,6 @@ export const fetchUser = () => {
 
 export const handleToken = (token) => {
     return async (dispatch) => {
-        debugger;
         const res = await axios.post('/api/payments', token);
 
         dispatch({type: FETCH_USER, payload: res.data});
